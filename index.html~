@@ -5,6 +5,70 @@
 		<title>Kyle Sandhage</title>  	
 	</head> 
 	<body>
-		<marquee>HELLOW, ORLD!</marquee>
+		<!-- Header -->
+		<div>
+			<h2>Hello,</h2>
+			<p>my name is <strong>Kyle Sandhage</strong>. I'm a web developer based out of Philadelphia.</p>
+		</div>
+
+		<!-- Navigation -->
+		<div>
+			<a href="">About me</a>
+			<a href="">Portfolio</a>
+			<a href="">Contact me</a>
+		</div>
+
+		<!-- About Me -->
+		<div>
+			<div>
+				<label>Where I'm from</label>
+			</div>
+			<div>
+				<label>What I've done</label>
+			</div>
+			<div>
+				<label>Book learnin'</label>
+			</div>
+			<div>
+				<label>Current gig</label>
+			</div>
+			<div>
+				<label>Writing</label>
+			</div>
+			<div>
+				<label>Cooking</label>
+			</div>
+		</div>
+
+		<!-- Portfolio -->
+		<div>
+			<div>
+				<label>Fizz Buzz</label>
+			</div>
+			<div>
+				<label>Shopping List</label>
+			</div>
+			<div>
+				<label>Kaplow Quiz</label>
+			</div>
+			<div>
+				<label>OCal</label>
+			</div>
+			<div>
+				<label>Relay Network</label>
+			</div>
+			<div>
+				<label></label>
+			</div>
+		</div>
+
+		<!-- Contact Me -->
+		<div>
+			<a href="">Email</a>
+			<a href="">Phone</a>
+			<a href="">LinkedIn</a>
+			<a href="">Twitter</a>
+		</div>
+
 	</body>
 </html>

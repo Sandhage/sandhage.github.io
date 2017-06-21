@@ -1,5 +1,38 @@
 html, body {
     width: 100%;
-    top: 0;
-    bottom: 0;
+    padding: 20px 10px;
+}
+
+div {
+	overflow: hidden;
+}
+
+div.jumbo, div.block-container {
+	width: 90%;
+	height: 250px;
+
+	border: 1px solid red;
+}
+
+div.jumbo > h2 {
+	font-size: 160px;
+	letter-spacing: 10px;
+	margin: 0;
+}
+
+div.jumbo > p {
+	margin: -10px 40px 0 60px;
+}
+
+div.block-container {
+	display: none;
+}
+
+div.block-container.active {
+	display: flex;
+}
+
+div.block {
+	height: 90px;
+	width:  120px;
 }
