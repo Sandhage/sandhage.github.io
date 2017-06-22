@@ -2,20 +2,7 @@ $('document').ready(function() {
 	topNavClick();
 	openExternalWindow();
 	// welcomeUser();
-
-	var slideout = new Slideout({
-		'panel': document.getElementById('panel'),
-		'menu': document.getElementById('menu'),
-		'padding': 256,
-		'tolerance': 70
-	});
-
-	$('.js-slideout-toggle').click(function() {
-		slideout.toggle();
-	});
-
 });
-
 
 
 function openExternalWindow() {
@@ -34,7 +21,7 @@ function topNavClick() {
 		}
 
 		hideAllContent();
-		event.preventDefault();
+
 		// Project Descriptions
 		var kaplow1   = "I challenged myself to learn vanilla JavaScript with this project. I had originally started off learning jQuery, but I was far too curious about what was going on behind the scenes and took this as an opportunity to really learn some basic javascript. After many nights struggling over variables, writing random string and number generators, and typing 'document.getElementByID...' far too many times, I made Kaplow Quiz.",
 			kaplow2   = "Kaplow Quiz was inspired by the game Keep Talking and Nobody Explodes! I had looked through a few quiz apps that others had made and noticed that they were often quizes about niche topics -- if you didn't know much about it, you were bound to fail. So I decided to try and even the playing field for all involved: the quiz randomly generates the answers to the questions and shows them to the player for four seconds. They then have 24 seconds to answer all of these questions.",
@@ -47,27 +34,25 @@ function topNavClick() {
 			// calendar1 = "Orbiter 3 is a theater production company in Philadelphia; one of the key members is a friend of mine who knew I love web development and they were looking to create a calendar app for their fundraising project -- a 365 day project where they try to get a sponser for each day to donate $3.65, $36.50, or $365.00. They wanted the ability for users to log in and claim a specific day to donate.",
 			// calendar2 = "One of the big challenges was that they used Squarespace to create their website. The design was great, but as a service Squarespace doesn't play well with 3rd party features. To get around this problem, I cloned the design as best I could on my own and they were able to place the app under a subdomain (calendar.orbiter3.com), while hosting it through Heroku.";
 
-		if ( $(this).is('#nav-kaplow') || $(this).is('#nav-kaplow-mobile') ) {
+		if ( $(this).is('#nav-kaplow') ) {
 			$('#project-title').html("Kaplow Quiz");
 			$('#description1').html(kaplow1);
 			$('#description2').html(kaplow2);
 			$('#project-link').html("link to project");
 			$('#project-link').prop("href", "http://sandhage.github.io/kaplow-quiz/");
-			$('#project-link').show(); // remove when Orbiter 3 is finished
 			$('#project-img-container').css("padding-top", "50px");
 			$('#project-img').prop("src", "assets/icon-bomb.svg");
 			$('#project-detail-container').show();
-		} else if ( $(this).is('#nav-meadow') || $(this).is('#nav-meadow-mobile') ) {
+		} else if ( $(this).is('#nav-meadow') ) {
 			$('#project-title').html("A Calming Meadow");
 			$('#description1').html(meadow1);
 			$('#description2').html(meadow2);
 			$('#project-link').html("link to project");
 			$('#project-link').prop("href", "http://sandhage.github.io/a-calming-meadow/");
-			$('#project-link').show(); // remove when Orbiter 3 is finished
 			$('#project-img-container').css("padding-top", "30px");
 			$('#project-img').prop("src", "assets/icon-sun.svg");
 			$('#project-detail-container').show();
-		} else if ( $(this).is('#nav-shoplist') || $(this).is('#nav-shoplist-mobile') ) {
+		} else if ( $(this).is('#nav-shoplist') ) {
 			$('#project-title').html("Shopping List App");
 			$('#description1').html(list1);
 			$('#description2').html(list2);
@@ -75,23 +60,24 @@ function topNavClick() {
 			$('#project-link').prop("href", "https://shopping-list-rails.herokuapp.com/");
 			$('#project-img-container').css("padding-top", "30px");
 			$('#project-img').prop("src", "assets/icon-basket.svg");
-			$('#project-link').show(); // remove when Orbiter 3 is finished
 			$('#project-detail-container').show();
-		} else if ( $(this).is('#nav-calendar') || $(this).is('#nav-calendar-mobile') ) {
+		} else if ( $(this).is('#nav-calendar') ) {
 			$('#project-title').html("Orbiter 3 Donation Calendar");
 			$('#description1').html(calendar1);
 			$('#description2').html(calendar2);
 			$('#project-link').html("link to project");
 			// $('#project-link').prop("href", "http://sandhage.github.io/orbiter-3-calendar");
-			$('#project-link').hide();
+			$('#project-link').prop("href", "#");
 			$('#project-img-container').css("padding-top", "30px");
 			$('#project-img').prop("src", "assets/icon-calendar.svg")
 			$('#project-detail-container').show();
-		} else if ( $(this).is('#nav-about') || $(this).is('#nav-about-mobile') ) {		
+		} else if ( $(this).is('#nav-about') ) {
 			$('#about-me-container').show();
-		} else if ( $(this).is('#nav-interests') || $(this).is('#nav-interests-mobile') ) {
+		} else if ( $(this).is('#nav-interests') ) {
 			$('#interests-container').show();
-		} else if ( $(this).is('#nav-contact') || $(this).is('#nav-contact-mobile') ) {
+		} else if ( $(this).is('#nav-other') ) {
+			$('#other-work-container').show();
+		} else if ( $(this).is('#nav-contact') ) {
 			$('#contact-container').show();
 		} else {
 			hideAllContent();
