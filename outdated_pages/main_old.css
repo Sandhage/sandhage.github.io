@@ -1,0 +1,304 @@
+/* Global */
+html, body {
+	width: 100%;
+	height: 100%;
+	background-color: #f8f8f8;
+}
+main {
+	padding-bottom: 75px;
+	background-color: #f8f8f8;
+}
+a:hover {
+	color: #333;
+}
+
+
+
+/* Slideout Nav */
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+.slideout-panel {
+  position:relative;
+  z-index: 1;
+  will-change: transform;
+}
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+
+
+/* Nav Bar */
+.nav {
+	height: 15px;
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	background-color: #f8f8f8;
+}
+.navbar {
+	background-image: none;
+}
+#standard-nav {
+	display: none;
+}
+
+
+
+/* Home */
+#home-container h2 {
+	margin-top: 25px;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+#home-container p {
+	font-size: 1.5rem;
+	margin-top: 15px;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+#home-container #home-p-two {
+	font-size: 1.125rem;
+	margin-right: 25%;
+	margin-left: 25%;
+}
+
+
+
+/* Project Info */
+#project-detail-container {
+	display: none;
+}
+#project-detail-container h2 {
+	margin-bottom: 25px;
+	text-align: center;
+}
+#project-detail-container hr {
+	width: 90%;
+	margin-right: 10px;
+}
+#project-detail-container p {
+	margin-right: 30px;
+	margin-left: 30px;
+	margin-bottom: 15px;
+	text-align: justify;
+}
+#project-detail-container a {
+	margin-left: 50%;
+	color: #FF0000;
+}
+#project-img {
+	display: none;
+}
+
+
+
+/* About Me */
+#about-me-container {
+	display: none;
+	margin-top: 45px;
+}
+#about-me-container p {
+	font-size: 1.75rem;
+}
+#about-me-container .jumbotron {
+	background-color: #f8f8f8;
+}
+
+/* Interests */
+#interests-container {
+	display: none;
+	margin-top: 45px;
+}
+#interests-container .row {
+	margin-bottom: 25px;
+}
+
+
+
+/* Contact Me */
+#contact-container {
+	display: none;
+	margin-right: auto;
+	margin-left: auto;
+	width: 40%;
+}
+#contact-container .row {
+	margin-bottom: 30px;
+}
+#contact-container .title-left {
+	float: left;
+}
+#contact-container .title-right {
+	float: right;
+}
+#contact-container .row input {
+	width: 100%;
+}
+#contact-name, 
+#contact-email, 
+#contact-message {
+	border: 1px solid rgb(169, 169, 169);
+}
+#contact-message {
+	width: 100%;
+}
+#contact-submit {
+	margin-top: 15px;
+	border: 1px solid #999;
+	color: #777;
+	background-color: #FFF;
+	border-radius: 3px;
+}
+
+
+
+/* Media Queries */
+@media screen and (min-width: 992px) {
+	/* Nav Bar */
+	.nav {
+		height: 50px;
+		font-size: 1.5rem;
+		letter-spacing: 2px;
+		background-color: #f8f8f8;
+	}
+	.navbar {
+		background-image: none;
+	}
+	#logo-img {
+		height: 20px;
+	}
+	#nav-center {
+		margin-left: 70px;
+	}
+	#nav-other {
+		display: none;
+	}
+	#social-media {
+		font-size: 1.5rem;
+		letter-spacing: normal;
+		margin-right: 25px;
+	}
+	#standard-nav {
+		display: block;
+	}
+	#mobile-nav {
+		display: none;
+	}
+
+	
+	/* Home */
+	#home-container h2 {
+		margin-top: 130px;
+		margin-left: 23%;
+	}
+	#home-container p {
+		font-size: 2rem;
+		margin-top: 45px;
+		margin-left: 40%;
+	}
+	#home-container #home-p-two {
+		font-size: 1rem;
+		margin-left: 66%;
+	}
+
+
+	/* Project Info */
+	#project-detail-container {
+		display: none;
+	}
+	#project-detail-container h2 {
+		margin-bottom: 25px;
+		text-align: left;
+	}
+	#project-detail-container hr {
+		width: 90%;
+		margin-right: 10px;
+	}
+	#project-detail-container p {
+		margin-left: 60px;
+		margin-bottom: 15px;
+	}
+	#project-detail-container a {
+		margin-left: 75%;
+		color: #FF0000;
+	}
+	#project-img-container {
+		padding-top: 50px;
+		padding-left: 75px;
+	}
+	#project-img {
+		display: block;
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 1350px) {
+	/* Home */
+	#home-container h2 {
+		margin-top: 200px;
+		margin-left: 10%;
+	}
+	#home-container p {
+		margin-top: 60px;
+		margin-left: 30%;
+	}
+	#home-container #home-p-two {
+		margin-left: 66%;
+	}
+
+
+
+	/* Project Container */
+	#project-detail-container h2 {
+		margin-bottom: 50px;
+	}
+	#project-detail-container p {
+		margin-left: 120px;
+		margin-bottom: 30px;
+	}
+	#project-text-container {
+		margin-top: 150px;
+	}
+	#project-img-container {
+		margin-top: 150px;
+		padding-top: 50px;
+		padding-left: 75px;
+	}
+
+
+
+	/* About Me */
+	#about-me-container {
+		margin-top: 150px;
+	}
+	#about-me-container p {
+		font-size: 1.75rem;
+	}
+
+
+
+	/* Interests */
+	#interests-container {
+		width: 80%;
+		margin-top: 175px;
+	}
+	#interests-container .row {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+}

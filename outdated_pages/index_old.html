@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kyle Sandhage</title>
+
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+
+	<script src="js/jquery-1.12.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/slideout.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+	<nav id="menu">
+		<h2>Test</h2>
+		<div class="container-fluid">
+			<ul class="nav navbar-nav" id="nav-center">
+				<li class="nav-click" id="nav-about-mobile"><a href="#">About Me</a></li>
+				<li class="dropdown">
+	    			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+				  	<ul class="dropdown-menu">
+				    	<li class="nav-click" id="nav-kaplow-mobile"><a href="#">Kaplow Quiz</a></li>
+				    	<li class="nav-click" id="nav-meadow-mobile"><a href="#">A Calming Meadow</a></li>
+				    	<li class="nav-click" id="nav-shoplist-mobile"><a href="#">Shopping List</a></li>
+				    	<li class="nav-click" id="nav-calendar-mobile"><a href="#">Calendar</a></li>
+				    </ul>
+				</li>
+				<li class="nav-click" id="nav-interests-mobile"><a href="#">Interests</a></li>
+				<li class="nav-click" id="nav-contact-mobile"><a href="#">Contact Me</a></li>
+			</ul>
+		</div>
+	</nav>
+	<main id="panel">
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav" id="mobile-nav">
+					<li class="js-slideout-toggle"><a href="#">Test</a></li>
+				</ul>
+				<div id="standard-nav">
+					<ul class="nav navbar-nav">
+						<li class="nav-click" id="nav-logo"><a href="#"><img src="assets/KS-logo.png" id="logo-img"></a></li>
+					</ul>
+					<ul class="nav navbar-nav" id="nav-center">
+						<li class="nav-click" id="nav-about"><a href="#">About Me</a></li>
+						<li class="dropdown">
+			    			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+						  	<ul class="dropdown-menu">
+						    	<li class="nav-click" id="nav-kaplow"><a href="#">Kaplow Quiz</a></li>
+						    	<li class="nav-click" id="nav-meadow"><a href="#">A Calming Meadow</a></li>
+						    	<li class="nav-click" id="nav-shoplist"><a href="#">Shopping List</a></li>
+						    	<li class="nav-click" id="nav-calendar"><a href="#">Calendar</a></li>
+						    </ul>
+		    			</li>
+						<li class="nav-click" id="nav-interests"><a href="#">Interests</a></li>
+						<li class="nav-click" id="nav-contact"><a href="#">Contact Me</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right" id="social-media">
+						<li><a href="https://www.linkedin.com/in/kyle-sandhage-b5439367" class="text-muted external-link"><img src="assets/icon-linkedin.svg"></a></li>
+						<li><a href="https://twitter.com/SyzygyGerund" class="text-muted external-link"><img src="assets/icon-twitter.svg"></a></li>
+						<li><a href="https://github.com/Sandhage" class="text-muted external-link"><img src="assets/icon-github.svg"></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container" id="home-container">
+			<h2>Hello, my name is Kyle!</h2>
+			<p>I'm a web developer based out of Philadelphia, PA.</p>
+			<p id="home-p-two">And this is my website :)</p>
+		</div>
+
+		<div class="container" id="project-detail-container">
+			<div class="row">
+				<div class="col-sm-12 col-md-6" id="project-img-container"><img src="#" id="project-img"></div>
+				<div class="col-sm-12 col-md-6" id="project-text-container">
+					<h2 id="project-title"></h2>
+					<hr align="right">
+					<p id="description1"></p>
+					<p id="description2"></p>
+					<a href="#" class="external-link" id="project-link"></a>
+				</div>
+				<div class="col-sm-3"></div>
+			</div>
+		</div>
+
+		<div class="container" id="about-me-container">
+			<div class="jumbotron">
+				<h2>About Me</h2>
+				<p>Hello! My name is Kyle Sandhage and I am a web developer. I really enjoy working up and down the stack: designing/wireframing pages; fleshing out the front-end with custom HTML, CSS, and JavaScript; digging deep into the back end to create features and functionality... I love it all! I had my first introduction to coding while pursuing my bachelor's degree in Journalism at the University of Georgia.</p>
+				<p>Alongside my major courses, I was accepted into the New Media Institute (within the Grady College of Journalism) where I earned the New Media Certificate -- an achievement that showed that I knew my way around the front-end. After obtaining my degree, I spent a few years trying on a couple different hats (barista, baker, market intelligence consultant, freelance writer, so on and so forth) before coming back to coding. It was something that I had enjoyed from the beginning and finally decided to seriously pursue as a career. I've since enrolled in courses through Thinkful to sharpen my development skills.</p>
+			</div>
+		</div>
+
+		<div class="container" id="interests-container">
+			<div class="row">
+				<div class="container col-sm-6 col-md-3">
+					<h3>Coding</h3>
+					<p>I love coding. Building things, problem solving... it's like a continuously changing puzzle! A puzzle I perpetually love to solve.</p>
+				</div>
+				<div class="container col-sm-6 col-md-3">
+					<h3>Photography</h3>
+					<p>I got into photography a few years ago and dove head-first into this hobby with a passion: wandering city streets at night, exploring abandoned buildings, hiking -- all to find my next subject.</p>
+				</div>
+				<div class="container col-sm-6 col-md-3">
+					<h3>Cycling</h3>
+					<p>What started as an alternative way to commute quickly became a beloved pass-time. I've dipped my toe into touring (having cycled from Atlanta, GA, to Anniston, AL, and back) and am itching to plot my next bike adventure!</p>
+				</div>
+				<div class="container col-sm-6 col-md-3">
+					<h3>Writing</h3>
+					<p>As long as I can remember reading and writing have been the most integral activities by which I've defined myself. Journals, short-stories, poems, zines... the final product does not matter to me. I just love the process.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="container col-sm-6 col-md-3">
+					<h3>Poetry</h3>
+					<p>Speaking more specifically than writing, I love poetry. I spent time as the managing poetry editor at Mandala Literary journal at UGA and often find myself socializing through local poetry groups and scenes (wherever I may be).</p>
+				</div>
+				<div class="container col-sm-6 col-md-3">
+					<h3>Aerial</h3>
+					<p>Two words: Dance Trapeze. Seriously, this must be one of the most fun physical activities I have had the chance to practice. If you are lucky enough to live near a studio, try it out!</p>
+				</div>
+				<div class="container col-sm-6 col-md-3">
+					<h3>Travel</h3>
+					<p>I feel priveleged to have grown up with parents who love to travel and had the means to bring us kids along; there is no question that I inherited this desire from them. My favorite trip so far has been to Tanzania.</p>
+				</div>
+				<div class="container col-sm-6 col-md-3">
+					<h3>Cooking</h3>
+					<p>Perfecting personal recipes or figuring out how to combine the last ingredients in the fridge and pantry: cooking is one of my favorite ways to destress. Also, <!-- make this statement random? -->I make a damn fine vegetarian chili.</p>
+				</div>
+			</div>
+		</div>
+			
+		<div class="container" id="contact-container">
+			<form action="//formspree.io/kylesandhage@gmail.com" method="POST">
+				<div class="row">
+					<div class="col-sm-5 col-md-6 title-left">
+						<h4 class="text-muted">Name</h4>
+						<input type="text" name="name" id="contact-name">
+					</div>
+					<div class="col-sm-5 col-md-6 title-right">
+						<h4 class="text-muted">Email</h4>
+						<input type="email" name="_replyto" id="contact-email">
+					</div>
+				</div>
+				
+				<input type="hidden" name="_next" value="//sandhage.github.io/portfolio-page/" />
+				<h4 class="text-muted">Message</h4>
+			    <textarea rows="10" cols="70" name="message" id="contact-message"></textarea>
+			    
+			    <input type="text" name="_gotcha" style="display:none" />
+			    <input type="submit" value="Send" id="contact-submit">
+			</form>
+		</div>
+	</main>
+</body>
+</html>
