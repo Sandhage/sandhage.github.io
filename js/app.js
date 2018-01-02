@@ -1,7 +1,6 @@
 $('document').ready(function() {
 	topNavClick();
 	openExternalWindow();
-	// welcomeUser();
 });
 
 
@@ -39,6 +38,7 @@ function topNavClick() {
 			$('#description2').html(relay2);
 			$('#project-link').html("link to website");
 			$('#project-link').prop("href", "http://relaynetwork.com/");
+			$('#project-link').show();
 			$('#project-img-container').css("padding-top", "30px");
 			$('#project-img').prop("src", "assets/keyboard.svg")
 			$('#project-detail-container').show();
@@ -47,6 +47,7 @@ function topNavClick() {
 			$('#description1').html(list1);
 			$('#description2').html(list2);
 			$('#project-link').html("link to project");
+			$('#project-link').hide();
 			$('#project-link').prop("href", "https://shopping-list-rails.herokuapp.com/");
 			$('#project-img-container').css("padding-top", "30px");
 			$('#project-img').prop("src", "assets/icon-basket.svg");
@@ -56,7 +57,8 @@ function topNavClick() {
 			$('#description1').html(calendar1);
 			$('#description2').html(calendar2);
 			$('#project-link').html("link to project");
-			$('#project-link').prop("href", "http://orbiter-3-calendar-production.herokuapp.com/");
+			$('#project-link').hide();
+			$('#project-link').prop("href", "");
 			$('#project-img-container').css("padding-top", "30px");
 			$('#project-img').prop("src", "assets/icon-calendar.svg")
 			$('#project-detail-container').show();
@@ -66,6 +68,7 @@ function topNavClick() {
 			$('#description2').html(meadow2);
 			$('#project-link').html("link to project");
 			$('#project-link').prop("href", "http://sandhage.github.io/a-calming-meadow/");
+			$('#project-link').show();
 			$('#project-img-container').css("padding-top", "30px");
 			$('#project-img').prop("src", "assets/icon-sun.svg");
 			$('#project-detail-container').show();
@@ -93,8 +96,3 @@ function hideAllContent() {
 	$('#other-work-container').hide();
 	$('#contact-container').hide();
 }
-
-// function welcomeUser() {
-// 	console.log("You are in a dark room.");
-// 	console.log("What do you do?");
-// }
